@@ -1,0 +1,14 @@
+<% if logged_in? %>
+  <div> 
+    <h1>Name</h1>
+    <h1><%@user%></h1>
+    <ul>
+      <li>
+        <% link_to "Sign in", signin_path %>
+      </li>
+    </ul>
+  </div>
+
+<% else %>
+  <% link_to "Sign in", signin_path %>
+<% end %>
