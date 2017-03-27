@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
+  resources :posts, only: [:new, :index, :create]
   root 'static_pages#home'
-  get 'sessions/new'
+  get '/signin', to: 'sessions#new'
   post '/signin', to: 'sessions#create'
   delete '/logout', to: 'sessions#destroy'
   get '/user', to: 'users#show'
 
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
