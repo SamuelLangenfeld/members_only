@@ -1,14 +1,25 @@
+<h1>Members Only!</h1>
+
+<p>This app lets members make text posts and view other members' posts. Non-members can view written posts, but can't write posts or see the authors of posts.
+<br>If you want to sign in, you can use email: <b>example@example.com</b>, password: <b>password</b>
+</p>
+
+<div>
 <% if logged_in? %>
-  <div> 
+
     <h1>Name</h1>
     <h1><%@user%></h1>
     <ul>
       <li>
-        <% link_to "Sign in", signin_path %>
+        <%= link_to "Sign in", signin_path %>
       </li>
     </ul>
-  </div>
+    </div>
+
 
 <% else %>
-  <% link_to "Sign in", signin_path %>
+  <%= link_to "Sign in", signin_path %>
+  </div>
 <% end %>
+
+<%= link_to "View Posts", posts_path %>

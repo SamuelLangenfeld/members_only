@@ -31,5 +31,11 @@
 
 <br>
 
+<% if logged_in? %>
 <%= link_to 'New Post', new_post_path %>
 <%= link_to 'Log Out', logout_url, method: 'delete' %>
+<% else %>
+<%= link_to 'Sign In', signin_path %>
+<%= link_to 'Home', root_path %>
+<% end %>
+
