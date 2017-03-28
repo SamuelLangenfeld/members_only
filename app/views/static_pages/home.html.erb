@@ -6,15 +6,9 @@
 
 <div>
 <% if logged_in? %>
+    <%= link_to "Sign in", signin_path %>
 
-    <h1>Name</h1>
-    <h1><%@user%></h1>
-    <ul>
-      <li>
-        <%= link_to "Sign in", signin_path %>
-      </li>
-    </ul>
-    </div>
+  </div>
 
 
 <% else %>
