@@ -1,24 +1,5 @@
-# README
+# Members Only!
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This app lets users make text posts. Anyone can see the posts, but only members who are signed in can see the authors of each post.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+![alt-text](https://github.com/SamuelLangenfeld/members_only/blob/master/app/assets/images/members-home.png?raw=true)
